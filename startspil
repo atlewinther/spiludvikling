@@ -1,0 +1,8 @@
+# Vores foerste script
+
+extends Node2D # Script til Node2D
+
+
+# funktionen skriver "Spillet starter nu" nede i consolen
+func _ready():
+	print("Spillet Starter nu")
