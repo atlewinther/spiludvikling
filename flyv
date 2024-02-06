@@ -1,0 +1,13 @@
+extends Sprite
+
+var Hastighed = 100
+
+func _physics_process(delta):
+	if Input.is_action_pressed("ui_right"):
+		position.x += Hastighed * delta
+	if Input.is_action_pressed("ui_left"):
+		position.x -= Hastighed * delta
+	if Input.is_action_pressed("ui_up"):
+		position.y -= Hastighed * delta
+	if Input.is_action_pressed("ui_down"):
+		position.y += Hastighed * delta
